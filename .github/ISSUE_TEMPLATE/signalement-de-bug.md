@@ -1,6 +1,6 @@
 ---
 name: Signalement de bug
-about: Signalez un bug pour nous aider à améliorer le projet.
+about: Signaler un bug pour nous aider à améliorer le projet
 title: ''
 labels: ''
 assignees: ''
