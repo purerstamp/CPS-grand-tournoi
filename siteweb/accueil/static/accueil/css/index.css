@@ -1,5 +1,11 @@
 main > .container {
-    padding: 60px 15px 0;
+    padding: 86px 12px 0 50px;
+    margin-right: 0;
+    max-width: none;
+}
+
+aside {
+    padding-left: 50px;
 }
 
 .bd-placeholder-img {

@@ -8,6 +8,7 @@
     <meta name="author" content="">
     <title>C'est Pas Sorcier, le Grand Tournoi</title>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet">
     <link href="{% static 'accueil/css/index.css' %}" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="https://archives.the-redunicorn.fr/logo/logo-tru_32px.png" />
   </head>
@@ -17,11 +18,22 @@
   {% include 'accueil/header.html' %}
 
   <!-- Begin page content -->
-  <main class="flex-shrink-0">
+  <main>
     <div class="container">
-      <h1 class="mt-5">C'est Pas Sorcier, le Grand Tournoi</h1>
-      <p class="lead">Bienvenue fan de CPS ! Ici, on te propose un classement des épisodes mais aussi de te faire ton propre classement, 
+      <div class="row mb-3">
+        <div class="col-12 col-md-8">
+          <h1 class="mt-5">C'est Pas Sorcier, le Grand Tournoi</h1>
+          <p class="lead">Bienvenue fan de CPS ! Ici, on te propose un classement des épisodes mais aussi de te faire ton propre classement, 
         sur la base d'une confrontation entre deux épisodes. Retrouve aussi l'ensemble des épisodes triés par numéro, saison, ou par thématique.</p>
+          <h2 class="mt-4">Le projet</h2>
+          <p class="lead">Une description plus détaillée du projet, des méthodes de classement, etc.</p>
+          <h2 class="mt-4">La face cachée du camion</h2>
+          <p class="lead">Une description technique, des choix de dev et du repo git.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          {% include 'accueil/sidebar.html' %}
+        </div>
+      </div>
     </div>
   </main>
 
