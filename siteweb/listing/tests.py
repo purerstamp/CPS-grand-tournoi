@@ -36,16 +36,16 @@ with open(filepath) as csv_file:
     csv_reader = csv.DictReader(csv_file, delimiter=';')
     k = 0
     for row in csv_reader:
-        episode = EpisodePerson(numero = k, #Clé = place dans le fichier .csv pour l'instant
-                               saison = 0, #Il n'y a pas de numéro de saison officiel
-                                date = row['Date'],
-                                categorie = row['Catégorie'],
-                                titre = row['Titre'],
-                                realisateur = row['Réalisateur'],
-                                animateurs = row['Animateurs'],
-                                resume = row['Résumé'],
-                                url = row['Lien Youtube'])
+        episode = Episode(numero = k, #Clé = place dans le fichier .csv pour l'instant
+                          saison = 0, #Il n'y a pas de numéro de saison officiel
+                          date = row['Date'],
+                          categorie = row['Catégorie'],
+                          titre = row['Titre'],
+                          realisateur = row['Réalisateur'],
+                          animateurs = row['Animateurs'],
+                          resume = row['Résumé'],
+                          url = row['Lien Youtube'])
         episode.save()
         k += 1
 
-print(Episode.objects.values_list('titre', flat=True))
+print(Episode.objects.values_list('titre', flat=True)) #Pas sûr que ça marche ça
