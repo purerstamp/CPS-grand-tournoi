@@ -7,7 +7,6 @@ class Episode(models.Model):
         ('geol', 'Géologie'),
     ]
     numero = models.PositiveSmallIntegerField(primary_key=True, help_text='Numéro absolu de l\'épisode.') 
-    saison = models.PositiveSmallIntegerField(help_text='Numéro de la saison.') #à enlever je pense
     date = models.DateField(help_text='Date de première diffusion.')
     categorie = models.CharField(choices=CATEGORIES, max_length=10, help_text='Catégorie de l\'épisode. Si manquante, ouvrir une issue sur github.')
     titre = models.CharField(max_length=50, help_text='Titre de l\'épisode.')
