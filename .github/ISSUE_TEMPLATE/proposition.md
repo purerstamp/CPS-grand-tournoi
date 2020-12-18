@@ -1,5 +1,5 @@
 ---
-name: Propositions
+name: Proposition
 about: Proposer une idée ou une fonctionnalité
 title: ''
 labels: enhancement
